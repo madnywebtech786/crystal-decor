@@ -46,7 +46,7 @@ export default function Gallery() {
         <SwiperSlide className='cursor-grab '>
           <div className='w-full h-full'>
             <Image
-              src='/images/wedding-slide1.png'
+              src='/images/long-img-1.jpg'
               alt='gallery img 1'
               width={500}
               height={500}
@@ -57,7 +57,7 @@ export default function Gallery() {
         <SwiperSlide className='cursor-grab '>
           <div className='w-full h-full flex flex-col gap-2 pb-2'>
             <Image
-              src='/images/wedding-slide1.png'
+              src='/images/slide1.jpg'
               alt='gallery img 1'
               width={500}
               height={500}
@@ -75,7 +75,7 @@ export default function Gallery() {
         <SwiperSlide className='cursor-grab '>
           <div className='w-full h-full'>
             <Image
-              src='/images/wedding-slide1.png'
+              src='/images/long-img-2.jpg'
               alt='gallery img 1'
               width={500}
               height={500}
@@ -93,7 +93,7 @@ export default function Gallery() {
               className='w-full h-1/2 rounded-lg'
             />
             <Image
-              src='/images/wedding-slide1.png'
+              src='/images/slide1.jpg'
               alt='gallery img 1'
               width={500}
               height={500}

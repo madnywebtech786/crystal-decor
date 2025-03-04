@@ -1,13 +1,13 @@
 .slide1Bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-      url('/images/Enchanting.png');
+      url('/images/slide1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   .slide2Bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-      url('/images/Floral.png');
+      url('/images/Enchanting.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

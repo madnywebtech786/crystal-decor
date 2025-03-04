@@ -17,10 +17,7 @@ export default function Footer() {
         </div>
         <div className='w-5/6'>
           <p className='text-xs'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            reiciendis, quo molestias deserunt minus similique architecto
-            eveniet ut nostrum consectetur possimus nobis asperiores, eos odit,
-            distinctio voluptate facilis quasi non.
+          We turn wedding dreams into reality with our expert decoration and planning services. With years of experience in crafting breathtaking wedding venues, we specialize in elegant floral arrangements.
           </p>
 
           <div className='flex justify-center lg:justify-start  my-5'>
@@ -92,7 +89,7 @@ export default function Footer() {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='text-base font-bold '>Hotline</h3>
-              <p className='text-xs'>403-361-4968</p>
+              <Link href={'tel:+14034026723'}>    <p className='text-xs'>+1 (403) 402-6723</p> </Link>
             </div>
           </div>
           <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>
@@ -106,7 +103,7 @@ export default function Footer() {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='text-base font-bold '>Official Email</h3>
-              <p className='text-xs'>info@crystaldecore.com</p>
+              <Link href={'mailto:info@crystaldecore.com'}> <p className='text-xs'>info@crystaldecore.com</p></Link>
             </div>
           </div>
 

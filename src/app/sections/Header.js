@@ -11,6 +11,7 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Image from 'next/image';
+import Link from 'next/link';
 export default function Header() {
   return (
     <div className='w-full relative'>
@@ -103,9 +104,11 @@ export default function Header() {
                     cake—all tailored to perfection.
                   </p>
                 </div>
+                <Link href={'tel:+14034026723'}> 
                 <button className='bg-white rounded-full p-2 lg:p-3 px-4 lg:px-6 w-max text-xxs lg:text-sm font-semibold uppercase'>
-                  Call 403-361-4968
+                  Call +1 (403) 402-6723
                 </button>
+                </Link>
               </div>
             </div>
             <div className='hidden xl:w-1/3'></div>

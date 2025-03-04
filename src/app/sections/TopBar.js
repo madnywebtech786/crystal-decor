@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 export default function TopBar() {
   return (
@@ -11,7 +12,7 @@ export default function TopBar() {
             width={20}
             height={20}
           />
-          <p className='text-xs md:text-sm'> info@crystaldecore.com</p>
+          <Link href={'mailto:info@crystaldecore.com'}></Link><p className='text-xs md:text-sm'> info@crystaldecore.com</p>
         </div>
         <div className='flex gap-1 items-center'>
           <Image
@@ -20,7 +21,7 @@ export default function TopBar() {
             width={20}
             height={20}
           />
-          <p className='text-xs md:text-sm'>403-361-4968</p>
+         <Link href={'tel:+14034026723'}> <p className='text-xs md:text-sm'>+1 (403) 402-6723</p></Link>
         </div>
       </div>
       <div className='w-1/2 hidden md:flex justify-end'>
