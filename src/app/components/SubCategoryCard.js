@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
 
-export default function SubCategoryCard({ name, category , onClick }) {
+export default function SubCategoryCard({ name, img , onClick }) {
   return (
     <div className=" cursor-pointer relative h-full group flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:border-gray-300" onClick={()=>onClick(name)}>
       {/* Product Image Container */}
       <div className="relative w-44 h-44 flex items-center justify-center rounded-lg overflow-hidden">
         <Image
-          src={`/images/products/${category}/${name}/img.png`}
+          src={img}
           alt={name}
           width={176}
           height={176}

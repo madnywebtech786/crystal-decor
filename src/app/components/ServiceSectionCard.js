@@ -12,7 +12,7 @@ const ServiceSectionCard = ({ name, index }) => {
       } bg-primaryExtraLight`}
     >
        <Image
-          src={'/images/serviceBg.png'}
+          src={'/images/serviceBg.webp'}
           alt={`service background`}
           width={1200}
           height={900}
@@ -20,7 +20,7 @@ const ServiceSectionCard = ({ name, index }) => {
         />
       <div className='w-full lg:w-1/2 flex justify-center z-20'>
         <Image
-          src={`/images/services/service${index+1}.png`}
+          src={`/images/services/service${index+1}.webp`}
           alt={`${name} service`}
           width={450}
           height={450}

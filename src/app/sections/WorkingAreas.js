@@ -13,14 +13,14 @@ import SectionDivider from '../components/SectionDivider';
 import Link from 'next/link';
 export default function WorkingAreas() {
   const Cities = [
-    { name: 'Airdrie', src: '/images/cities/Airdrie.png' },
-    { name: 'Calgary', src: '/images/cities/Calgary.png' },
-    { name: 'Chesteremere', src: '/images/cities/Chesteremere.png' },
-    { name: 'Cochrane', src: '/images/cities/Cochrane.png' },
-    { name: 'Strathmore', src: '/images/cities/Strathmore.jpg' },
-    { name: 'Highriver', src: '/images/cities/highriver.jpg' },
-    { name: 'okotoks', src: '/images/cities/okotoks.jpg' },
-    { name: 'Edmonton ', src: '/images/cities/okotoks.jpg' },
+    { name: 'Airdrie', src: '/images/cities/Airdrie.webp' },
+    { name: 'Calgary', src: '/images/cities/Calgary.webp' },
+    { name: 'Chesteremere', src: '/images/cities/Chesteremere.webp' },
+    { name: 'Cochrane', src: '/images/cities/Cochrane.webp' },
+    { name: 'Strathmore', src: '/images/cities/Strathmore.webp' },
+    { name: 'Highriver', src: '/images/cities/highriver.webp' },
+    { name: 'okotoks', src: '/images/cities/okotoks.webp' },
+    { name: 'Edmonton ', src: '/images/cities/edmonton.webp' },
   ];
   return (
     <div className='p-4 md:p-8 lg:p-12 2xl:p-20 '>

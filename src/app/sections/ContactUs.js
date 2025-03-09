@@ -94,7 +94,7 @@ export default function ContactUs() {
         <Image
 
           
-          src={'/images/contactside.png'}
+          src={'/images/contactside.webp'}
           alt='contact img'
           width={800}
           height={800}

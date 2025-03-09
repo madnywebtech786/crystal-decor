@@ -58,7 +58,7 @@ export default function Testimonials() {
       </div>
       <div className='w-full lg:w-1/2 my-5 lg:my-0'>
         <Image
-          src={'/images/testside.png'}
+          src={'/images/testside.webp'}
           alt='testimonial side img'
           width={1000}
           height={1000}

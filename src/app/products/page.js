@@ -23,40 +23,39 @@ import SubCategoryCard from '../components/SubCategoryCard';
 
 // Categories data
 const categoriesData = [
-  { name: 'chair', image: '/images/products/chair/chair1.png' },
-  { name: 'Cake', image: '/images/products/cake/cake1.png' },
-  { name: 'Lamp', image: '/images/products/lamp/lamp1.png' },
-  { name: 'Table', image: '/images/products/table/table1.png' },
-  { name: 'Flower', image: '/images/products/flower/flower1.png' },
-  { name: 'chair', image: '/images/products/chair/chair1.png' },
-  { name: 'Cake', image: '/images/products/cake/cake1.png' },
-  { name: 'Lamp', image: '/images/products/lamp/lamp1.png' },
-  { name: 'Table', image: '/images/products/table/table1.png' },
-  { name: 'Flower', image: '/images/products/flower/flower1.png' },
+  { name: 'Backdrops', image: '/images/products/Backdrops/40-Foot-Ceiling-Curtain-Draping-Sheer-Voile-Flame-Retardant-Ivory_317x.webp' },
+  { name: 'Catering', image: '/images/products/Catering/Plates.jpg' },
+  { name: 'Chairs', image: '/images/products/Chairs/Chairs.avif' },
+  { name: 'Neon Signs', image: '/images/products/Neon Signs/Better-Together-Neon-Sign-Set-Up_305x.avif' },
+  { name: 'Table', image: '/images/products/Table/Rectangular Tablecloths.webp' },
+  { name: 'Backdrops', image: '/images/products/Backdrops/40-Foot-Ceiling-Curtain-Draping-Sheer-Voile-Flame-Retardant-Ivory_317x.webp' },
+  { name: 'Catering', image: '/images/products/Catering/Plates.jpg' },
+  { name: 'Chairs', image: '/images/products/Chairs/Chairs.avif' },
+  { name: 'Neon Signs', image: '/images/products/Neon Signs/Better-Together-Neon-Sign-Set-Up_305x.avif' },
+  { name: 'Table', image: '/images/products/Table/Rectangular Tablecloths.webp' },
+
 ];
 
 const categoriesLinks = [
-  'All Products',
-  'Tents',
-  'Tables',
-  'chair',
-  'Table Settings',
-  'Decor',
-  'Catering Services',
-  'Furniture',
-  'Linens',
-  'Event Equipments',
-  'Fresh Flowers',
-  'Cakes',
+  'Backdrops',
+  'Catering',
+  'Centerpieces & Cake Stands',
+  'Chairs',
+  'Neon Signs',
+  'Pedestal Display Stands',
+  'Rhinestone Rolls',
+  'Table',
 ];
 
 export default function Page() {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
+  const [back, setBack] = useState(false);
+
   const [visibleProducts, setVisibleProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]); // For search and category filtering
   const [searchValue, setSearchValue] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('chair');
+  const [selectedCategory, setSelectedCategory] = useState('Backdrops');
   const [selectedSubCategories, setSelectedSubCategories] = useState([]);
   const productsPerPage = 9;
 
@@ -79,8 +78,20 @@ export default function Page() {
 
   useEffect(() => {
     const subCategories = subcategories[selectedCategory];
-    setFilteredProducts([]);
-    setSelectedSubCategories(subCategories || []);
+    if(subCategories==null){
+      const filtered = productData.filter(
+        (product) => product.category === selectedCategory
+      );
+      setFilteredProducts(filtered);
+      setSelectedSubCategories(null);
+      setCurrentPage(1);
+      
+    }
+    else{
+      setFilteredProducts([]);
+      setSelectedSubCategories(subCategories || []);
+    }
+
   }, [selectedCategory]);
 
   const handlePageChange = (page) => {
@@ -93,7 +104,7 @@ export default function Page() {
 
     if (value === '') {
       // If search is cleared, show all products
-      setFilteredProducts(productData);
+      setSelectedCategory('Backdrops')
     }
   };
 
@@ -113,17 +124,22 @@ export default function Page() {
     );
     setFilteredProducts(filtered);
     setSelectedSubCategories(null);
+    setBack(true)
     setCurrentPage(1);
   };
 
   const handleCategoryClick = (category) => {
-    if (category === 'All Products') {
-      setFilteredProducts(productData);
-    } else {
-      console.log(category);
+  
+      setBack(false)
       setSelectedCategory(category);
-    }
   };
+
+  const BackToCategory =()=>{
+    const subCategories = subcategories[selectedCategory];
+      setSelectedSubCategories(subCategories || []);
+      setFilteredProducts([]);
+      setBack(false)
+  }
 
   return (
     <div>
@@ -167,7 +183,7 @@ export default function Page() {
 
         <div className='flex flex-col lg:flex-row'>
           {/* Sidebar for larger screens */}
-          <div className='w-full lg:w-1/4 rounded-lg bg-primaryLight max-h-screen h-max p-4 py-8 mt-5 hidden lg:block'>
+          <div className='w-full lg:w-1/4 rounded-lg bg-primaryLight/50 max-h-screen h-max p-4 py-8 mt-5 hidden lg:block'>
             <div className='flex justify-between'>
               <input
                 type='text'
@@ -206,7 +222,7 @@ export default function Page() {
           <div className='w-full block lg:hidden'>
             <Accordion
               title={'Categories'}
-              className='bg-primaryLight rounded-lg p-4'
+              className='bg-primaryLight/50 rounded-lg p-4'
             >
               <div className='w-full rounded-lg max-h-screen h-max py-2'>
                 <div className='flex justify-between'>
@@ -250,22 +266,28 @@ export default function Page() {
             {loading ? (
               <Loader />
             ) : (
+              <>
+              {back?
+              <button className='text-white bg-black font-bold p-2 px-4 w-max rounded-xl mt-5 mx-4' onClick={()=>BackToCategory()}> Back</button>
+              :''}
               <div className='w-full flex flex-wrap'>
                 {visibleProducts.map((product, index) => (
-                  <div key={index} className='w-full md:w-1/3 xl:w-1/3 p-4'>
+                  <div key={index} className='w-full md:w-1/3 xl:w-1/3 p-5'>
                     <ProductCard product={product} />
                   </div>
                 ))}
                 {selectedSubCategories?.map((subCategory, index) => (
-                  <div key={index} className='w-full md:w-1/3 xl:w-1/3 p-4'>
+                  <div key={index} className='w-full md:w-1/3 xl:w-1/3 p-5'>
                     <SubCategoryCard
                       name={subCategory.name}
                       category={selectedCategory}
                       onClick={handleSubCategoryClick}
+                      img={subCategory.img}
                     />
                   </div>
                 ))}
               </div>
+              </>
             )}
 
             {/* Pagination */}

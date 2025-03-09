@@ -5,37 +5,37 @@ import ServiceCard from '../components/ServiceCard';
 
 const services = [
   {
-    imageSrc: '/images/services/service1.png',
+    imageSrc: '/images/services/service1.webp',
     title: 'Flower Design',
     description:
       'Exquisite floral arrangements, from bridal bouquets to venue décor, crafted to complement your theme beautifully.',
   },
   {
-    imageSrc: '/images/services/service2.png',
+    imageSrc: '/images/services/service2.webp',
     title: 'Photoshoot',
     description:
       'Capture timeless moments with our professionally styled wedding photoshoot setups.',
   },
   {
-    imageSrc: '/images/services/service3.png',
+    imageSrc: '/images/services/service3.webp',
     title: 'Wedding Coordination',
     description:
       'We handle all the details—venue setup, guest management, and seamless event flow—so you can relax and enjoy your day.',
   },
   {
-    imageSrc: '/images/services/service4.png',
+    imageSrc: '/images/services/service4.webp',
     title: 'Wedding Cake',
     description:
       'Custom-designed wedding cakes that taste as incredible as they look, perfectly matching your theme and style.',
   },
   {
-    imageSrc: '/images/services/service5.png',
+    imageSrc: '/images/services/service5.webp',
     title: 'Catering',
     description:
       'Delicious, customized menus that delight your guests, from appetizers to full-course meals.',
   },
   {
-    imageSrc: '/images/services/service6.png',
+    imageSrc: '/images/services/service6.webp',
     title: 'Decor',
     description:
       'Stunning venue decorations, including elegant table settings, luxurious drapery, and ambient lighting, to create the perfect atmosphere.',

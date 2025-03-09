@@ -4,6 +4,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
+    <>
     <div className='bg-secondary rounded-tl-lg rounded-tr-lg pt-20 pb-10 flex px-4 md:px-8 lg:px-12 2xl:px-20 text-white z-10 flex-col lg:flex-row gap-8 lg:gap-0'>
       <div className='w-full lg:w-1/4 flex flex-col gap-5 items-center lg:items-start'>
         <div className='flex justify-center w-3/4'>
@@ -118,7 +119,7 @@ export default function Footer() {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='text-base font-bold '>Our Location</h3>
-              <p className='text-xs'>104 street shop 1 , calgary , Canada</p>
+              <p className='text-xs w-2/3'>7 Westwinds Crescent NE #129, Calgary, AB T3J 5H2</p>
             </div>
           </div>
         </div>
@@ -126,14 +127,20 @@ export default function Footer() {
       <div className='w-full lg:w-1/4 flex flex-col gap-3 items-center lg:items-start'>
         <h2 className='text-xl font-bold uppercase '>Gallery</h2>
         <div className='flex flex-wrap'>
-            <Image src={'/images/wedding-slide1.png'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
-            <Image src={'/images/wedding-slide1.png'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
-            <Image src={'/images/wedding-slide1.png'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
-            <Image src={'/images/wedding-slide1.png'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
-            <Image src={'/images/wedding-slide1.png'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
-            <Image src={'/images/wedding-slide1.png'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
+            <Image src={'/images/slide1.webp'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
+            <Image src={'/images/testside.webp'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
+            <Image src={'/images/Floral.webp'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
+            <Image src={'/images/Enchanting.webp'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
+            <Image src={'/images/wedding-services-bg.webp'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
+            <Image src={'/images/wedding-slide1.webp'} alt='gallery img 1' width={150} height={150} className='w-1/3 rounded-lg p-1' />
         </div>
       </div>
+
+ 
     </div>
+         <div className='bg-white py-3 text-center text-secondary text-base'>
+         Copyright &copy; 2025. All rights reserved.
+       </div>
+       </>
   );
 }

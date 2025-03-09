@@ -23,14 +23,14 @@ we handle every element to make your big day stress-free and unforgettable.`,
   return (
     <div className='flex p-4 md:p-8 lg:p-12 2xl:p-20 relative flex-col lg:flex-row'>
       <Image
-        src={'/images/sideshapeleft.png'}
+        src={'/images/sideshapeleft.webp'}
         alt='style img'
         width={400}
         height={400}
         className='w-1/6 absolute bottom-1/3 left-0 opacity-25 floating'
       />
       <Image
-        src={'/images/sideshaperight.png'}
+        src={'/images/sideshaperight.webp'}
         alt='style img'
         width={400}
         height={400}
@@ -48,14 +48,14 @@ we handle every element to make your big day stress-free and unforgettable.`,
       <div className='w-full lg:w-1/2 relative flex justify-center my-5 lg:my-0'>
         <div className='w-2/3 relative h-full'>
           <Image
-            src={'/images/about-side.png'}
+            src={'/images/about-side.webp'}
             alt='decorative img'
             width={410}
             height={560}
             className='w-full'
           />
           <Image
-            src={'/images/couple-sidemain.png'}
+            src={'/images/couple-sidemain.webp'}
             alt='decorative img'
             width={410}
             height={560}
@@ -64,7 +64,7 @@ we handle every element to make your big day stress-free and unforgettable.`,
         </div>
 
         <Image
-          src={'/images/couple-side.png'}
+          src={'/images/couple-side.webp'}
           alt='decorative img'
           width={410}
           height={560}

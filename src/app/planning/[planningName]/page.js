@@ -39,7 +39,7 @@ export default function Page() {
         {/* Left: Image */}
         <div className='flex-shrink-0 w-full lg:w-1/2'>
           <img
-            src={`/images/plannings/${formattedPlanningName}.png`}
+            src={`/images/plannings/${formattedPlanningName}.webp`}
             alt={formattedPlanningName}
             className='w-full h-auto rounded-lg shadow-md max-h-[500px] object-cover'
           />

@@ -4,11 +4,11 @@ import React from 'react';
 export default function ProductCard({product}) {
   console.log('pr',product)
   return (
-    <div className="relative h-full group flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:border-gray-300">
+    <div className="relative h-full group flex flex-col items-center bg-white border-2 border-gray-200 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:border-secondary">
       {/* Product Image Container */}
       <div className="relative w-44 h-44 flex items-center justify-center rounded-lg overflow-hidden">
         <Image
-          src={`/images/products/${product.category}/${product.subcategory}/${product.name}.png`}
+          src={`/images/products${product.path}`}
           alt={product.name}
           width={176}
           height={176}
@@ -17,12 +17,14 @@ export default function ProductCard({product}) {
       </div>
 
       {/* Product Name */}
-      <p className="mt-4 text-xl font-semibold text-gray-800 group-hover:text-secondary transition-colors duration-300 text-center">
+      <p className="mt-4 text-sm font-semibold text-gray-800 group-hover:text-secondary transition-colors duration-300 text-center capitalize ">
         {product.name}
       </p>
 
-      {/* Accent Border */}
-      <div className="absolute inset-0 rounded-lg border-2 border-transparent group-hover:border-secondary transition-border duration-300"></div>
+{product.size?
+      <p className='bg-black p-2 text-white font-bold absolute top-4 left-4 rounded-lg text-xs'>{product.size}</p>
+
+:""}
     </div>
   );
 }

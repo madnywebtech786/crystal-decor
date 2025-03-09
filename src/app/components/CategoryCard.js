@@ -3,14 +3,14 @@ import React from 'react';
 
 export default function CategoryCard({ name, image ,onClick }) {
   return (
-    <div className="cursor-pointer relative group mx-auto w-max border-2 border-primary rounded-full p-6 overflow-hidden" onClick={()=>{onClick(name)}} >
+    <div className="cursor-pointer relative group mx-auto w-max border-2 border-primary rounded-full p-4 overflow-hidden" onClick={()=>{onClick(name)}} >
       {/* Image */}
       <Image
         src={image}
         alt={name}
-        width={80}
-        height={80}
-        className="z-10"
+        width={90}
+        height={90}
+        className="z-10 rounded-full"
       />
 
       {/* Black Overlay */}

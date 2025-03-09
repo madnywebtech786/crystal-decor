@@ -5,14 +5,14 @@ export default function TestimonialCard({ desc, name }) {
   return (
     <div className='bg-white rounded-lg m-4 border-2 border-primaryLight p-4 relative cursor-grab'>
       <Image
-        src='/images/testleft2.png'
+        src='/images/testleft2.webp'
         alt='decorative left'
         width={100}
         height={100}
         className='absolute top-0 left-0'
       />
       <Image
-        src='/images/testright2.png'
+        src='/images/testright2.webp'
         alt='decorative right'
         width={100}
         height={100}
