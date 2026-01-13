@@ -57,14 +57,14 @@ export default function Gallery() {
         <SwiperSlide className='cursor-grab '>
           <div className='w-full h-full flex flex-col gap-2 pb-2'>
             <Image
-              src='/images/slide1.webp'
+              src='/images/bd1.webp'
               alt='gallery img 1'
               width={500}
               height={500}
               className='w-full h-1/2 rounded-lg'
             />
             <Image
-              src='/images/wedding-slide1.webp'
+              src='/images/bd3.webp'
               alt='gallery img 1'
               width={500}
               height={500}
@@ -86,14 +86,43 @@ export default function Gallery() {
         <SwiperSlide className='cursor-grab '>
           <div className='w-full h-full flex flex-col gap-2 pb-2'>
             <Image
-              src='/images/wedding-slide1.webp'
+              src='/images/db5.webp'
               alt='gallery img 1'
               width={500}
               height={500}
               className='w-full h-1/2 rounded-lg'
             />
             <Image
-              src='/images/slide1.webp'
+              src='/images/db4.webp'
+              alt='gallery img 1'
+              width={500}
+              height={500}
+              className='w-full h-1/2 rounded-lg'
+            />
+          </div>
+        </SwiperSlide>
+          <SwiperSlide className='cursor-grab '>
+          <div className='w-full h-full'>
+            <Image
+              src='/images/long-img-3.webp'
+              alt='gallery img 1'
+              width={500}
+              height={500}
+              className='w-full h-full rounded-lg'
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='cursor-grab '>
+          <div className='w-full h-full flex flex-col gap-2 pb-2'>
+            <Image
+              src='/images/db6.webp'
+              alt='gallery img 1'
+              width={500}
+              height={500}
+              className='w-full h-1/2 rounded-lg'
+            />
+            <Image
+              src='/images/db4.webp'
               alt='gallery img 1'
               width={500}
               height={500}
