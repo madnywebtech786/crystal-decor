@@ -104,7 +104,7 @@ export default function Footer() {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='text-base font-bold '>Official Email</h3>
-              <Link href={'mailto:info@crystaldecore.com'}> <p className='text-xs'>info@crystaldecore.com</p></Link>
+              <Link href={'mailto:crystaldecor.ca@gmail.com'}> <p className='text-xs'>crystaldecor.ca@gmail.com</p></Link>
             </div>
           </div>
 

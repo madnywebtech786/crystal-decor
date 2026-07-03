@@ -12,7 +12,7 @@ export default function TopBar() {
             width={20}
             height={20}
           />
-          <Link href={'mailto:info@crystaldecore.com'}></Link><p className='text-xs md:text-sm'> info@crystaldecore.com</p>
+          <Link href={'mailto:crystaldecor.ca@gmail.com'}></Link><p className='text-xs md:text-sm'> crystaldecor.ca@gmail.com</p>
         </div>
         <div className='flex gap-1 items-center'>
           <Image
