@@ -10,7 +10,6 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import SectionDivider from '../components/SectionDivider';
-import Link from 'next/link';
 export default function WorkingAreas() {
   const Cities = [
     { name: 'Airdrie', src: '/images/cities/Airdrie.webp' },
@@ -57,11 +56,9 @@ export default function WorkingAreas() {
         >
           {Cities.map((city, index) => (
             <SwiperSlide key={'city' + index}>
-              <Link href={`/projects/${city.name}`} >
               <div className='w-full p-5' key={index + 'city'}>
                 <CityCard name={city.name} src={city.src} />
               </div>
-              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
